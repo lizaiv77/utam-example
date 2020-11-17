@@ -1,6 +1,6 @@
-import Login from '@utam/tmp-pageobjects/pageObjects/login';
-import Appnav from '@utam/tmp-pageobjects/pageObjects/appnav';
-import AppNavBarItemRoot from '@utam/tmp-pageobjects/pageObjects/appNavBarItemRoot';
+import Login from 'tmp-pageobjects/pageObjects/login';
+import Appnav from 'tmp-pageobjects/pageObjects/appnav';
+import AppNavBarItemRoot from 'tmp-pageobjects/pageObjects/appNavBarItemRoot';
 
 describe('login, find app nav bar item by text and click', () => {
     beforeAll(() => {

@@ -1,23 +1,17 @@
 {
-    "name": "utam-js",
+    "name": "utam-example",
     "private": true,
     "license": "MIT",
-    "description": "UTAM Javascript Implementation",
+    "description": "UTAM Integration example",
     "main": "index.js",
     "scripts": {
         "clean": "lerna exec -- rimraf build/ tsconfig.tsbuildinfo && rimraf node_modules",
-        "lint": "eslint '**/*.{js,ts}'",
-        "format": "prettier --write '{packages,scripts}/**/*.{js,ts,json,md}'",
-        "test:wdio": "cd packages/integration-wdio && yarn test",
         "test:unit": "jest --config ./scripts/jest/root.config.js",
         "test": "yarn test:unit",
         "build:ts": "tsc -b",
         "build": "yarn build:ts && lerna run build",
         "watch:ts": "tsc -b --watch",
-        "start": "node scripts/initialize",
-        "test:debug": "node --inspect-brk node_modules/.bin/jest --config ./scripts/jest/root.config.js --runInBand",
-        "test:salesforce": "cd packages/tmp-pageobjects && yarn test",
-        "test:simulator": "cd packages/integration-tests && yarn test"
+        "test:salesforce": "cd packages/tmp-pageobjects && yarn test"
     },
     "workspaces": [
         "packages/@utam/*",

@@ -10,7 +10,7 @@
                 "selector": {
                     "css": "one-app-nav-bar"
                 },
-                "type": "@utam/tmp-pageobjects/pageObjects/appNavBar",
+                "type": "tmp-pageobjects/pageObjects/appNavBar",
                 "public": true
             }
         ]

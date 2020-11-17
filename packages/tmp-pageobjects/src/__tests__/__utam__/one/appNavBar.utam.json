@@ -3,7 +3,7 @@
         "elements": [
             {
                 "name": "navItems",
-                "type": "@utam/tmp-pageobjects/pageObjects/appNavBarItemRoot",
+                "type": "tmp-pageobjects/pageObjects/appNavBarItemRoot",
                 "public": true,
                 "selector": {
                     "css": "one-app-nav-bar-item-root",

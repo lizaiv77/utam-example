@@ -20,19 +20,14 @@ scripts/private/
 packages/@utam/*/build/
 packages/@utam/*/dist/
 packages/**/pageObjects/**/*.js
+packages/**/pageObjects/**/*.d.ts
 packages/*/build/
 packages/*/dist/
 packages/**/__compiled_fixtures__/*.js
 packages/playground/public/assets/js/views/
-packages/vanilla-js-components/pageObjects/
-packages/@utam/tmp-pageobjects/pageObjects/
-packages/vanilla-js-components/public/modules/
-packages/integration-karma/pageObjects/
-packages/integration-tests/pageObjects/
 
 # db volume
 db-data/
 
 # testing
 packages/**/debug*
-packages/integration-wdio/report*
