@@ -18,8 +18,8 @@
         "@wdio/cli": "^6.6.2",
         "chromedriver": "^85.0.1",
         "ts-node": "^9.0.0",
-        "utam": "0.0.1-alpha9",
         "wdio-chromedriver-service": "^6.0.0",
+        "utam": "0.0.1-alpha9",
         "wdio-utam-service": "0.0.1-alpha9"
     }
 }
