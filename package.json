@@ -6,12 +6,9 @@
     "main": "index.js",
     "scripts": {
         "clean": "lerna exec -- rimraf build/ tsconfig.tsbuildinfo && rimraf node_modules",
-        "test:unit": "jest --config ./scripts/jest/root.config.js",
-        "test": "yarn test:unit",
         "build:ts": "tsc -b",
         "build": "yarn build:ts && lerna run build",
-        "watch:ts": "tsc -b --watch",
-        "test:salesforce": "cd packages/tmp-pageobjects && yarn test"
+        "test": "cd packages/tmp-pageobjects && yarn test"
     },
     "workspaces": [
         "packages/@utam/*",
@@ -31,17 +28,12 @@
         "@types/express": "^4.17.6",
         "@types/jest": "^25.2.1",
         "@types/serve-static": "^1.13.3",
-        "@typescript-eslint/eslint-plugin": "^2.26.0",
-        "@typescript-eslint/parser": "^2.26.0",
         "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.1",
-        "eslint-plugin-prettier": "^3.1.2",
         "glob": "^7.1.6",
         "husky": "^4.2.3",
         "jest": "^25.1.0",
         "lerna": "^3.20.2",
         "lint-staged": "^10.1.1",
-        "prettier": "^2.0.2",
         "rimraf": "^3.0.2",
         "rollup": "^2.29.0",
         "rollup-plugin-node-builtins": "^2.1.2",

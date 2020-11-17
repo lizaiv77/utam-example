@@ -1,7 +1,7 @@
 # utam-example
 example of utam integration
 
-steps to run UI tests:
+Steps to run UI tests:
 - yarn install
 - yarn build
-- yarn test:salesforce
+- yarn test
