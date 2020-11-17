@@ -1,0 +1,69 @@
+{
+    "name": "utam-js",
+    "private": true,
+    "license": "MIT",
+    "description": "UTAM Javascript Implementation",
+    "main": "index.js",
+    "scripts": {
+        "clean": "lerna exec -- rimraf build/ tsconfig.tsbuildinfo && rimraf node_modules",
+        "lint": "eslint '**/*.{js,ts}'",
+        "format": "prettier --write '{packages,scripts}/**/*.{js,ts,json,md}'",
+        "test:wdio": "cd packages/integration-wdio && yarn test",
+        "test:unit": "jest --config ./scripts/jest/root.config.js",
+        "test": "yarn test:unit",
+        "build:ts": "tsc -b",
+        "build": "yarn build:ts && lerna run build",
+        "watch:ts": "tsc -b --watch",
+        "start": "node scripts/initialize",
+        "test:debug": "node --inspect-brk node_modules/.bin/jest --config ./scripts/jest/root.config.js --runInBand",
+        "test:salesforce": "cd packages/tmp-pageobjects && yarn test",
+        "test:simulator": "cd packages/integration-tests && yarn test"
+    },
+    "workspaces": [
+        "packages/@utam/*",
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/preset-typescript": "^7.9.0",
+        "@babel/register": "^7.9.0",
+        "@commitlint/cli": "^8.3.5",
+        "@rollup/plugin-commonjs": "^11.1.0",
+        "@rollup/plugin-node-resolve": "^7.1.1",
+        "@rollup/plugin-replace": "^2.3.2",
+        "@rollup/plugin-typescript": "^6.0.0",
+        "@types/express": "^4.17.6",
+        "@types/jest": "^25.2.1",
+        "@types/serve-static": "^1.13.3",
+        "@typescript-eslint/eslint-plugin": "^2.26.0",
+        "@typescript-eslint/parser": "^2.26.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "glob": "^7.1.6",
+        "husky": "^4.2.3",
+        "jest": "^25.1.0",
+        "lerna": "^3.20.2",
+        "lint-staged": "^10.1.1",
+        "prettier": "^2.0.2",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.29.0",
+        "rollup-plugin-node-builtins": "^2.1.2",
+        "typescript": "^3.8.3"
+    },
+    "volta": {
+        "node": "12.16.2",
+        "yarn": "1.22.5"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -e $GIT_PARAMS"
+        }
+    },
+    "engines": {
+        "node": ">=12.16.2 <13"
+    }
+}

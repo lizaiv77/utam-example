@@ -1,0 +1,73 @@
+{
+    "selector": {
+        "css": "div#content"
+    },
+    "root": true,
+    "methods": [
+        {
+            "name": "login",
+            "args": [
+                {
+                    "name": "userNameStr",
+                    "type": "string"
+                },
+                {
+                    "name": "passwordStr",
+                    "type": "string"
+                }
+            ],
+            "compose": [
+                {
+                    "element": "userName",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "userNameStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "password",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "passwordStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "submitBtn",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "userName",
+            "public": true,
+            "type": "editable",
+            "selector": {
+                "css": "input[type='email']"
+            }
+        },
+        {
+            "name": "password",
+            "public": true,
+            "type": "editable",
+            "selector": {
+                "css": "input[type='password']"
+            }
+        },
+        {
+            "name": "submitBtn",
+            "public": true,
+            "type": "clickable",
+            "selector": {
+                "css": "input[type='submit']"
+            }
+        }
+    ]
+}

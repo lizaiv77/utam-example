@@ -1,0 +1,18 @@
+{
+    "root": true,
+    "selector": {
+        "css": "one-appnav"
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "appNavBar",
+                "selector": {
+                    "css": "one-app-nav-bar"
+                },
+                "type": "@utam/tmp-pageobjects/pageObjects/appNavBar",
+                "public": true
+            }
+        ]
+    }
+}

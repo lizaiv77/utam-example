@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "sourceMap": true
+      },
+    
+      "references": [
+        { "path": "./packages/tmp-pageobjects" }
+      ],
+      "exclude": [
+        "node_modules",
+        "**/__tests__/**"
+      ]
+}

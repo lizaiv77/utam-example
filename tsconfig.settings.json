@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "declaration": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "composite": true,
+        "target": "ES2019",
+        "skipLibCheck": true,
+        "baseUrl": "."
+    },
+
+    "exclude": [
+        "node_modules/**",
+        "**/__tests__/**",
+        "**/build/**",
+        "**/dist/**"
+    ]
+}

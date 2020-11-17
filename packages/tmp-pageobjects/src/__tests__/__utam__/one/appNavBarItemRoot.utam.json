@@ -1,0 +1,25 @@
+{
+    "methods": [
+        {
+            "name": "getItemText",
+            "compose": [
+                {
+                    "element": "itemLink",
+                    "apply": "getTitle"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "itemLink",
+                "public": true,
+                "type": "clickable",
+                "selector": {
+                    "css": "a"
+                }
+            }
+        ]
+    }
+}

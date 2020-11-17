@@ -1,0 +1,38 @@
+# OS artifacts
+.DS_STORE
+
+# Tools artifacts
+node_modules
+coverage
+.eslintcache
+*.log
+*.pem
+tsconfig.tsbuildinfo
+dump.rdb
+logfile
+
+# Project artifacts
+__benchmarks_results__/
+testing_dev/
+
+# Builds
+scripts/private/
+packages/@utam/*/build/
+packages/@utam/*/dist/
+packages/**/pageObjects/**/*.js
+packages/*/build/
+packages/*/dist/
+packages/**/__compiled_fixtures__/*.js
+packages/playground/public/assets/js/views/
+packages/vanilla-js-components/pageObjects/
+packages/@utam/tmp-pageobjects/pageObjects/
+packages/vanilla-js-components/public/modules/
+packages/integration-karma/pageObjects/
+packages/integration-tests/pageObjects/
+
+# db volume
+db-data/
+
+# testing
+packages/**/debug*
+packages/integration-wdio/report*

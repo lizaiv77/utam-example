@@ -1,0 +1,8 @@
+{
+    "extends": "../../tsconfig.settings.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "build",
+        "types": ["node", "@types/jest", "@utam/loader", "wdio-utam-service", "webdriverio"]
+    }
+}
