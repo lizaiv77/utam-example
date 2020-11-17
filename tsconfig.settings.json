@@ -11,8 +11,10 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "composite": true,
-        "target": "ES2019",
+        "target": "ES2020",
         "skipLibCheck": true,
+        "isolatedModules": false,
+        "incremental": true,
         "baseUrl": "."
     },
 
@@ -20,6 +22,7 @@
         "node_modules/**",
         "**/__tests__/**",
         "**/build/**",
-        "**/dist/**"
+        "**/dist/**",
+        "**/pageObjects/**"
     ]
 }

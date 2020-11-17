@@ -1,0 +1,14 @@
+{
+    "name": "my-pageobjects",
+    "version": "0.0.1",
+    "private": true,
+    "types": "build/index.d.ts",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "yarn compile",
+        "compile": "utam -c utam.config.js"
+    },
+    "devDependencies": {
+        "utam": "0.0.1-alpha18"
+    }
+}

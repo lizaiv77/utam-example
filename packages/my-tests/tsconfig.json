@@ -3,6 +3,7 @@
     "compilerOptions": {
         "rootDir": "src",
         "outDir": "build",
-        "types": ["node", "@types/jest", "@utam/loader", "wdio-utam-service", "webdriverio"]
+        "types": ["node", "@types/jest", "@utam/loader", "wdio-utam-service", "webdriverio"],
+        "noImplicitAny": false
     }
 }

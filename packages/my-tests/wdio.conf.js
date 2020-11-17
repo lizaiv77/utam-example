@@ -14,7 +14,6 @@ exports.config = {
     ],
     logLevel: 'trace',
     bail: 0,
-    baseUrl: 'https://na45.stmfa.stm.salesforce.com',
     waitforTimeout: 20000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 0,
