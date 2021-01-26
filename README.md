@@ -14,9 +14,9 @@ Clone or fork repository and run `yarn install` from root.
         +-- package.json
         +-- tsconfig.json
         +-- wdio.conf.js
-    +-- my-pageobjects
+    +-- my-components
         +-- pageObjects
-        +-- customComponent
+        +-- custom
             +-- <component sources>
             +-- __utam__
                 +-- <component name>.utam.json
@@ -30,7 +30,7 @@ Clone or fork repository and run `yarn install` from root.
 +-- tsconfig.settings.json        
 ```
 
-# Compiler setup (my-pageobjects)
+# Compiler setup (my-components)
 
 - add UTAM dependencies to package.json
 ```json
@@ -69,7 +69,7 @@ module.exports = {
         "utam": "0.0.1-alpha18",
         "wdio-utam-service": "0.0.1-alpha18",
         "utam-preview": "0.0.1-alpha18",
-        "my-pageobjects" : "0.0.1"
+        "my-components" : "0.0.1"
     }
 }
 ```

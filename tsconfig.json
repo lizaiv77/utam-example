@@ -3,7 +3,7 @@
       /* only process references */
   ],
   "references": [
-      { "path": "./packages/my-pageobjects" },
+      { "path": "./packages/my-components" },
       { "path": "./packages/my-tests" },
   ],
   "exclude": [

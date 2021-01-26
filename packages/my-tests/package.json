@@ -19,6 +19,6 @@
         "utam": "0.0.1-alpha18",
         "wdio-utam-service": "0.0.1-alpha18",
         "utam-preview": "0.0.1-alpha18",
-        "my-pageobjects" : "0.0.1"
+        "my-components" : "0.0.1"
     }
 }

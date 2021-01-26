@@ -1,0 +1,16 @@
+{
+    "root" : true,
+    "selector" : {
+        "css" : ".my-class"
+    },
+    "elements" : [
+        {
+            "name" : "lightningTextarea",
+            "type" : "utam-preview/pageObjects/textarea",
+            "public" : true,
+            "selector" : {
+                "css" : "lightning-textarea"
+            }
+        }
+    ]
+}

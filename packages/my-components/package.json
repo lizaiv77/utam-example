@@ -1,5 +1,5 @@
 {
-    "name": "my-pageobjects",
+    "name": "my-components",
     "version": "0.0.1",
     "private": true,
     "types": "build/index.d.ts",
